@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "SneakerShop"
 include(":app")
- 
+include(":features-auth")
+include(":common")

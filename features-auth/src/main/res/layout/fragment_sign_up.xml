@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.fragments.SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/encode_sans_bold"
+            android:text="Registration"
+            android:textColor="@color/primary"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <EditText
+
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:fontFamily="@font/encode_sans_bold"
+                android:gravity="start|center_vertical"
+                android:hint="@string/hint_ed_username"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/light_grey_2"
+                android:textColorHint="@color/light_grey_2"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:fontFamily="@font/encode_sans_bold"
+                android:gravity="start|center_vertical"
+                android:hint="@string/hint_ed_email"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHint="@color/light_grey_2"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:fontFamily="@font/encode_sans_bold"
+                android:gravity="start|center_vertical"
+                android:hint="@string/hint_ed_password"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHint="@color/light_grey_2"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:fontFamily="@font/encode_sans_bold"
+                android:gravity="start|center_vertical"
+                android:hint="@string/hint_ed_conf_password"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHint="@color/light_grey_2"
+                android:textSize="13sp" />
+
+            <android.widget.Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/button_style"
+                android:fontFamily="@font/encode_sans_bold"
+                android:text="@string/create_ac_bt"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_have_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/encode_sans_bold"
+                android:gravity="center"
+                android:text="@string/text_go_to_login"
+                android:textColor="@color/primary"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

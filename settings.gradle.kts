@@ -23,3 +23,5 @@ rootProject.name = "SneakerShop"
 include(":app")
 include(":features-auth")
 include(":common")
+include(":domain")
+include(":data")
